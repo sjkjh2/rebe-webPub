@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+html { font-size:20px; }
+body { font-size:1rem; }
+
+.visual { position:relative; height:11.8rem;background:url(../images/bg_visual.png) no-repeat center top / 100% auto; } /* height:708/3배 사이즈/20px rem사이즈 | 60으로 나누면 됨 */
+.visual button { position:absolute; left:.9rem; top:.5666rem; width:1.1666rem; height:1.1666rem; background:url(../images/btn_close.png) no-repeat 0 0 / 100% auto; }
+
+.box1 { display:flex; } /* ie버전 확인 안해도 될때 */
+.box1 > div { flex:1; background:gray;}
+.box1 > div:first-child { flex:none; width:200px; background:pink; }
+.box1 > div:last-child { flex:none; width:100px; background:skyblue; }
+
+.box2 { position:relative; padding:0 0 0 100px; } /*  ie9 */
+.box2 div:first-child { position:absolute; left:0; top:0; width:100px; height:100; background:tomato; }
+.box2 div:last-child { background:violet; }
+
+.box3 { display:table; width:100%; } /* ie9 */
+.box3 > div { display:table-cell; }
+.box3 > div:first-child { background:orange; }
+.box3 > div:last-child { width:50px; background:yellow; }
