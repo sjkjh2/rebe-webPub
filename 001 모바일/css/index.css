@@ -19,3 +19,11 @@ body { font-size:1rem; }
 .box3 > div { display:table-cell; }
 .box3 > div:first-child { background:orange; }
 .box3 > div:last-child { width:50px; background:yellow; }
+
+.img { text-align:center;; }
+.img img { min-width:400px; width:100%; max-width:800px; } /* 대상자 */
+
+.calc { border: 1px solid red; }
+.calc > div { float: left; }
+.calc > div:first-child { width:100px; background: tomato; }
+.calc > div:last-child { width: calc(100% - 100px); background: blue; } /* 가로 세로만 지원 패딩 마진 안됨; */

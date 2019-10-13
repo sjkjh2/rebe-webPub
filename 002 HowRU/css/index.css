@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+html { font-size:20px; }
+body { font-size:1rem; }
+
+.visual { position: relative; }
+.visual img { width: 100%; }
+.visual button { position: absolute; left: .9rem; top: .5666rem; width: 1.1666rem; height: 1.1666rem; background: url(../images/btn_close.png) no-repeat 0 0 / 100% auto; }
+
+.profile { text-align: center; }
+.profile .photo { position: relative; margin: -5.1166rem auto 0; width: 6.1666rem; }/* 가로 사이즈가 있어야 margin 0 auto 먹음 */
+.profile .photo > div { overflow: hidden; position:relative; width: 6.1666rem; height: 6.1666rem; border-radius: 100%; border: 2px solid #e8e8e8; }
+.profile .photo .pic { position: absolute; left: 0; top: 50%; width: 100%; transform: translateY(-50%); }
+.profile .photo .ing { position: absolute; right: -0.4666rem; bottom: .4555rem; width: 1.7666rem; }
+.profile h2 { padding: .5333rem .6rem; font-size: 1rem; color: #000; line-height: 1; }
+.profile label { position: relative; font-size: .6rem; color: #000; }
+.profile label span { display: inline-block; position: relative; margin: 0 .3rem 0 0; width: 1.6666rem; height: .6666rem; border-radius: .6666rem; background: #5cb846; transition: background .3s; vertical-align: -0.0333rem; }
+.profile label span:before { content: "ON"; position: absolute; right: .3rem; top: 0; font-size: .3333rem; color: #fff; }
+.profile label:before { content: ""; display: block; position: absolute; left: .0833rem; top: .0933rem; z-index:10; width:.4666rem; height:.4666rem; border-radius: 100%; background: #fff; transition: left .3s; }
+.profile input[type="checkbox"]:checked + label:before { left: 1.0833rem; }
+.profile input[type="checkbox"]:checked + label span { background: #e52424; }
+.profile input[type="checkbox"]:checked + label span:before { content: "OFF"; right: .6rem; }
+
+.profile p { display: table; margin: 0 auto; width: 12.4666rem; min-height: 2.3rem; border-radius: 0.3833rem; background: #f1f1f1; font-size: .5833rem; color: #151515;}
+.profile p span { display: table-cell; padding: .3833rem 0; vertical-align: middle; line-height: .7666rem; }
