@@ -1,0 +1,5 @@
+@charset "utf-8";
+html { font-size:20px; } /* 1440px기준 / 360px작업 | 4배 * 20px */
+body { font-size:1rem; }
+
+
