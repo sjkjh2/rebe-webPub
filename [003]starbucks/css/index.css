@@ -62,3 +62,5 @@ body { font-size:1rem; }
 .board .list_type1 li a { overflow:hidden; display:block; width:8.375rem; font-size:.6625rem; line-height:3rem; text-overflow:ellipsis; white-space:nowrap; } /* width:670px; font-size:53px; line-height:3rem; */
 .board .btn_more { position:absolute; right:2rem; top:.75rem; } /* right:160px; top:60px; */
 .board .btn_more a { display:block; width:1.375rem; height:1.375rem; background:url("../images/btn_notice_more.png") no-repeat center / 100% auto; } /* width:110px; height:110px; */
+.promotion { height:3rem; background:#f6f5f0; text-align:center; } /* height:240px; */
+.promotion a { display:inline-block; position:relative; width:8.75rem; background:url("../images/btn_prom_down.png") no-repeat right center / 1.375rem auto; font-size:.8rem; line-height:3rem; text-align:left; } /* width:700px; font-size:64px; line-height:3rem; background:110px */
