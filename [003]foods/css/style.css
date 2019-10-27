@@ -1,0 +1,22 @@
+/* font */
+@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo:400,700,800&display=swap&subset=korean');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap&subset=korean');
+@import url('https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css');
+
+.ff_nm { font-family:'Nanum Myeongjo', serif; }
+.ff_nm_400 { font-weight:400; } /* regular */ 
+.ff_nm_700 { font-weight:700; } /* bold */
+.ff_nm_800 { font-weight:800; } /* extra-bold */
+
+.ff_nt { font-family:'Noto Sans KR', sans-serif; }
+.ff_nt_300 { font-weight:300; } /* light */
+.ff_nt_400 { font-weight:400; } /* regular */
+.ff_nt_500 { font-weight:500; } /* medium */
+.ff_nt_700 { font-weight:700; } /* bold */
+.ff_nt_900 { font-weight:900; } /* black */
+
+.ff_ns { font-family:'NanumSquare', sans-serif; }
+.ff_ns_300 { font-weight: 300 } /* light */
+.ff_ns_400 { font-weight: 400 } /* normal */
+.ff_ns_700 { font-weight: 700 } /* bold */
+.ff_ns_800 { font-weight: 800 } /* bolder */

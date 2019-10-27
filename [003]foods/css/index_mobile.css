@@ -1,0 +1,12 @@
+html { font-size:20px; }
+body { font-size:1rem; }
+
+/* 헤더영역 */
+header { margin:0; width:100%; }
+/* header h1 { margin:2.3rem 0 0 2.75rem; } */
+header h1 { margin-left:2.75rem; }
+header nav { display:none; }
+header button { display:block; float:right; margin:1.85rem 2rem 0 0; width:3.5rem; height:3.5rem; background:url("../images/ico_menu.png") #201c1b no-repeat center; }
+
+/* 메인영역 */
+.visual { height:34.15rem; }
