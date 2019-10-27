@@ -1,0 +1,4 @@
+.box { width:100%; margin:0; }
+.box .a { height:600px; }
+.box .b { float:none; width:100%; height:400px; }
+.box .c { float:none; width:100%; height:400px; }

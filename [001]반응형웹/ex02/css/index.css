@@ -1,0 +1,4 @@
+.box { position:relative; margin:0 auto; width:100%; }
+.box .a { float:left; margin-left:20%; width:60%; height:100vh; background:purple; }
+.box .b { position:absolute; left:0; top:0; width:20%; height:100vh; background:skyblue; }
+.box .c { float:left; width:20%; height:100vh; background:orange; }

@@ -1,0 +1,13 @@
+html { font-size:20px; }
+body { font-size:1rem; }
+
+/* 헤더영역 */
+header { width:100%; left:0; transform:translateX(0); }
+header h1 { padding:1.35rem 0 0 1.5rem; }
+header nav { display:none; }
+header > div { padding:.9rem 0 0; }
+header > div > * { margin:0; }
+header > div a { display:none; }
+header > div button { width:1.5rem; height:1.575rem; }
+header > div button.menu { display:inline-block; background:url("../images/ico_menu.png") no-repeat center / .85rem auto; }
+header > div button.search { background:url("../images/ico_search.png") no-repeat center transparent / .75rem auto; }
