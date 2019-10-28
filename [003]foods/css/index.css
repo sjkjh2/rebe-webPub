@@ -1,3 +1,5 @@
+body { font-family:'Noto Sans KR', sans-serif; }
+
 /* 헤더영역 */
 header { position:absolute; left:50%; transform:translateX(-50%); z-index:100; width:1200px; }
 header h1 { float:left; margin:46px 0 0; }
@@ -23,3 +25,43 @@ header button { display:none; }
 .visual .deco2 img:nth-child(2) { left:-208px; top:-73px; width:497px; }
 .visual .deco2 img:nth-child(3) { right:200px; bottom:200px; width:323px; }
 .visual .deco2 img:nth-child(4) { right:-105px; top:-309px; width:682px; }
+
+.noodle { position:relative; height:886px; background:linear-gradient(to right,  #0a1b18 0%,#092932 100%); text-align:center; letter-spacing:-0.75px; }
+.noodle:after { content:""; display:block; position:absolute; left:50%; bottom:-149px; transform:translateX(-50%); z-index:80; width:908px; height:321px; background:url("../images/bg_noodle.png") no-repeat center; }
+.noodle h2:before { content:""; display:block; margin:0 auto 44px; width:105px; height:146px; background:url("../images/ico_noodle.png") no-repeat center / 100% auto; }
+.noodle h2 { padding:70px 0 44px 0; font-size:48px; color:#fff; }
+.noodle h2 span { color:#d17f60; }
+.noodle p { font-size:14px; color:#e6e7e8; line-height:18px; }
+.noodle ul {padding:50px 0 0;}
+.noodle li { display:inline-block; margin:0 30px; font-size:27px; }
+.noodle li a { display:block; position:relative; width:72px; height:225px; background:url("../images/bg_polygon.png") no-repeat center / 100% auto; color:#d17f60; }
+.noodle li a span { display:block; position:absolute; left:50%; top:33px; transform:translateX(-50%); width:27px; line-height:1; }
+
+.info { position:relative; height:904px; background:url("../images/img_info.jpg") no-repeat center / cover; }
+.info .box { position:absolute; left:50%; top:220px; transform:translateX(-50%); width:1169px; height:545px; text-align:center; letter-spacing:-0.1; -webkit-box-shadow:5px 5px 5px 0px rgba(0,0,0,0.75); -moz-box-shadow:5px 5px 5px 0px rgba(0,0,0,0.75); box-shadow:5px 5px 5px 0px rgba(0,0,0,0.75); }
+.info h2 { margin:60px 0 0; font-size:33px; line-height:30px; }
+.info h2 span:last-child { font-size:20px; }
+.store { float:left; width:387px; height:545px; background:#201c1b; }
+.store h2 { color:#d9d1ca; }
+.store h2:after { content:""; display:block; margin:30px 0 20px; width:100%; height:15px; background:url("../images/bg_line1.png") no-repeat center; }
+.store strong { font-size:14px; color:#fff; line-height:22px; }
+.store address { color:rgba(255, 255, 255, .5); }
+.store a { font-size:16px; color:rgba(213, 182, 147, .5); line-height:45px; }
+.store time { color:rgba(167, 166, 166, .5); line-height:17px; }
+.store .inner > div:last-child { padding:24px 0 0; }
+.store .inner > div:last-child:after { content:""; display:block; margin:30px 0 0; width:100%; height:5px; background:url("../images/bg_line2.png") no-repeat center; }
+.booking { float:right; width:782px; height:545px; background:#fff; }
+.booking h2 { color:#422e1b; }
+.booking form { margin:40px auto 0; width:650px; text-align:left; }
+.booking fieldset p { position:relative; width:279px; height:50px; border-bottom:2px solid #201c1b; }
+.booking fieldset p:nth-child(2), .booking form p:nth-child(4) { float:left; margin:33px 0 0 23px; }
+.booking fieldset p:nth-child(3), .booking form p:nth-child(5) { float:right; margin:33px 23px 0 0; }
+.booking fieldset p label { display:block; position:absolute; right:0; bottom:0; width:40px; height:37px; }
+.booking fieldset p:nth-child(2) label { background:url("../images/ico_name.png") no-repeat top center; }
+.booking fieldset p:nth-child(3) label { background:url("../images/ico_people.png") no-repeat top center; }
+.booking fieldset p:nth-child(4) label { background:url("../images/ico_date.png") no-repeat top center; }
+.booking fieldset p:nth-child(5) label { background:url("../images/ico_time.png") no-repeat top center; }
+.booking fieldset input { width:239px; height:50px; border:0; border-radius:0; color:#422e1b; text-indent:3px; }
+.booking fieldset input::-webkit-input-placeholder { font-size:13px; color:#422e1b; }
+.booking form > p { margin:75px 0 0; text-align:center; }
+.booking form > p input { width:203px; height:52px; border-radius:23px; background:#d5b693; font-size:18px; color:#422e1b; cursor:pointer; }

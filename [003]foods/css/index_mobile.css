@@ -3,10 +3,61 @@ body { font-size:1rem; }
 
 /* 헤더영역 */
 header { margin:0; width:100%; }
-/* header h1 { margin:2.3rem 0 0 2.75rem; } */
-header h1 { margin-left:2.75rem; }
+header h1 { margin:2.3rem 0 0 2.75rem; }
 header nav { display:none; }
 header button { display:block; float:right; margin:1.85rem 2rem 0 0; width:3.5rem; height:3.5rem; background:url("../images/ico_menu.png") #201c1b no-repeat center; }
 
 /* 메인영역 */
 .visual { height:34.15rem; }
+.visual .deco1 { margin:10rem auto 0; width:23.6rem; height:23.65rem; }
+.visual .deco1 img:first-child { width:5.75rem; }
+.visual .deco1 img:last-child { width:7.85rem; }
+.visual .txt { width:15.05rem; height:15.65rem; outline-offset:4px; }
+.visual .txt .inner { padding:1.75rem 0 0 3.15rem; }
+.visual .txt span:nth-child(1) { width:2.4rem; font-size:3.05rem; }
+.visual .txt span:nth-child(2) { margin:0 .5rem 0 1rem; width:1.7rem; font-size:1.8rem; }
+.visual .txt span.small { margin:0 .35rem; width:.75rem; font-size:.8rem; }
+.visual .deco2 img:nth-child(1) { left:-7.8rem; bottom:-6.2rem; width:21.85rem; }
+.visual .deco2 img:nth-child(2) { display:none;}
+.visual .deco2 img:nth-child(3) { right:-8.35rem; bottom:11.25rem; width:9.3rem; }
+.visual .deco2 img:nth-child(4) { right:-10.65rem; top:-4.65rem; width:21.2rem; }
+
+.noodle { height:34.9rem; letter-spacing:-0.0375rem; }
+.noodle:after { bottom:-4.6rem; width:26.4rem; height:9.3rem; background-size:100% auto; }
+.noodle h2:before { margin:0 auto 1.4rem; width:4.15rem; height:5.8rem; }
+.noodle h2 { padding:2.5rem 0 2.2rem 0; font-size:2.4rem; color:#fff; }
+.noodle p { margin:0 auto; width:28.2rem; font-size:.7rem; line-height:.9rem; }
+.noodle p br { display:none; }
+.noodle ul {padding:2.5rem 0 0;}
+.noodle li { margin:0 .85rem; font-size:1rem; }
+.noodle li a { width:2.65rem; height:8.25rem; }
+.noodle li a span { top:1.15rem; width:1rem; }
+
+.info { height:61rem; background-size:auto 35.5rem; background-position:bottom center;}
+.info .box { position:static; left:auto; top:auto; transform:none; width:100%; height:auto; -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none; }
+.info h2 { margin:0; font-size:1.65rem; line-height:1.5rem; }
+.info h2 span:last-child { font-size:1rem; }
+.store { float:none; width:100%; height:26rem; }
+.store .inner { margin:0 auto; width:22.5rem; }
+.store h2 { padding:6.65rem 0 0; }
+.store h2:after { margin:1.5rem 0 2.5rem; height:15px; }
+.store strong { font-size:.7rem; line-height:1.1rem; }
+.store address { font-size:.6rem; }
+.store a { font-size:.8rem; line-height:2.25rem; }
+.store time { font-size:.6rem; line-height:.85rem; }
+.store .inner > div:last-child { padding:0; }
+.store .inner > div:last-child:after { display:none; }
+.store .inner > div:nth-child(2) { float:left; }
+.store .inner > div:nth-child(3) { float:right; }
+
+.booking { float:none; margin:2.5rem auto 0; width:22.05rem; height:28.8rem; background:#fff; }
+.booking h2 { padding:1.5rem 0; }
+.booking form { margin:.5rem auto 0; width:100%; text-align:center; }
+.booking fieldset p { display:inline-block; padding:1.65rem 0 0; width:13.95rem; height:2.5rem; text-align:left; }
+.booking fieldset p:nth-child(2) { padding:0; }
+.booking fieldset p:nth-child(2), .booking form p:nth-child(3), .booking fieldset p:nth-child(4), .booking form p:nth-child(5) { float:none; margin:0; }
+.booking fieldset p label { width:2rem; height:1.85rem; }
+.booking fieldset input { width:11.95rem; height:2.5rem; }
+.booking fieldset input::-webkit-input-placeholder { font-size:.65rem; }
+.booking form > p { margin:2.5rem 0 0; }
+.booking form > p input { width:10.15rem; height:2.6rem; border-radius:1.15rem; font-size:.9rem; }
