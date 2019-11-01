@@ -13,7 +13,7 @@ header button { display:none; }
 .visual .deco1 { position:relative; z-index:90; margin:303px auto 0; width:749px; height:666px; }
 .visual .deco1 img { position:absolute; height:auto; }
 .visual .deco1 img:first-child { left:0; top:0; width:177px; }
-.visual .deco1 img:last-child { right:0; bottom:0; width:243px; }
+.visual .deco1 img:last-child { right:0; bottom:0; width:243px; } /* .visual .deco1 img:last-child 이부분에 있는 이미지들 배치는 포지션으로 */
 .visual .txt { position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); z-index:80; width:464px; height:482px; border:1px solid #fff; outline:3px solid #fff; outline-offset:7px; text-align:left; }
 .visual .txt .inner { padding:55px 0 0 100px; }
 .visual .txt span { display:inline-block; vertical-align:top; }
@@ -38,7 +38,7 @@ header button { display:none; }
 .noodle li a span { display:block; position:absolute; left:50%; top:33px; transform:translateX(-50%); width:27px; line-height:1; }
 
 .info { position:relative; height:904px; background:url("../images/img_info.jpg") no-repeat center / cover; }
-.info .box { position:absolute; left:50%; top:220px; transform:translateX(-50%); width:1169px; height:545px; text-align:center; letter-spacing:-0.1; -webkit-box-shadow:5px 5px 5px 0px rgba(0,0,0,0.75); -moz-box-shadow:5px 5px 5px 0px rgba(0,0,0,0.75); box-shadow:5px 5px 5px 0px rgba(0,0,0,0.75); }
+.info .box { position:absolute; left:50%; top:220px; transform:translateX(-50%); width:1169px; height:545px; text-align:center; letter-spacing:-0.1px; box-shadow:5px 5px 5px 0px rgba(0, 0, 0, 0.75); } /* box-shadow는 webkit안넣으셔도되요 */
 .info h2 { margin:60px 0 0; font-size:33px; line-height:30px; }
 .info h2 span:last-child { font-size:20px; }
 .store { float:left; width:387px; height:545px; background:#201c1b; }
@@ -47,9 +47,9 @@ header button { display:none; }
 .store strong { font-size:14px; color:#fff; line-height:22px; }
 .store address { color:rgba(255, 255, 255, .5); }
 .store a { font-size:16px; color:rgba(213, 182, 147, .5); line-height:45px; }
-.store time { color:rgba(167, 166, 166, .5); line-height:17px; }
-.store .inner > div:last-child { padding:24px 0 0; }
-.store .inner > div:last-child:after { content:""; display:block; margin:30px 0 0; width:100%; height:5px; background:url("../images/bg_line2.png") no-repeat center; }
+.store p { color:rgba(167, 166, 166, .5); line-height:17px; }
+.store > div:last-child { padding:24px 0 0; }
+.store > div:last-child:after { content:""; display:block; margin:30px 0 0; width:100%; height:5px; background:url("../images/bg_line2.png") no-repeat center; }
 .booking { float:right; width:782px; height:545px; background:#fff; }
 .booking h2 { color:#422e1b; }
 .booking form { margin:40px auto 0; width:650px; text-align:left; }
