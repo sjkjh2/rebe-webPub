@@ -1,5 +1,6 @@
 html { font-size:20px; }
 body { font-size:1rem; }
+.m0auto { width:100%; padding:0 1.5rem; box-sizing:border-box; }
 
 /* 헤더영역 */
 header { width:100%; left:0; transform:translateX(0); }
@@ -11,3 +12,18 @@ header > div a { display:none; }
 header > div button { width:1.5rem; height:1.575rem; }
 header > div button.menu { display:inline-block; background:url("../images/ico_menu.png") no-repeat center / .85rem auto; }
 header > div button.search { background:url("../images/ico_search.png") no-repeat center transparent / .75rem auto; }
+
+.visual .controls { width:100%; }
+
+.business { padding:1.475rem 0 1.775rem; background:#fff; }
+.business .left { padding:4.175rem 0 0; }
+/* .business .left:before { width:38px; height:3px; background:#000; } */
+.business .left p { top:.825rem; width:4.5rem; line-height:.7rem; font-size:.5rem; }
+.business .left h2 { font-size:.875rem; }
+.business .left .controls { padding:1.05rem 0 0; }
+.business .left .controls button { width:1.425rem; height:1.4rem; background-size:100% auto !important; }
+.business .right li { padding:0; width:7.575rem; }
+.business .right li ~ li { display:none; }
+.business .right li a { padding:7.175rem 0 0; background-size:100% auto !important; }
+.business .right li strong { font-size:.625rem; }
+.business .right li p { margin:.525rem 0 0; padding:.525rem 0 0; font-size:.5rem; } 
