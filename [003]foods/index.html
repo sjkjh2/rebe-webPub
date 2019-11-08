@@ -73,12 +73,14 @@
                     <div>
                         <strong class="fw_400">NO1. 청담점</strong>
                         <address>서울특별시 강남구 강남로 124로 15호</address>
+                        <em>TEL. 02-1542-7809</em>
                         <a href="tel:02-1542-7809">TEL. 02-1542-7809</a>
                         <p>AM 09:00 ~ 18:00<br>BrakTime  15:00 ~ 16:30</p>
                     </div>
                     <div>
                         <strong class="fw_400">NO2. 가로수점</strong>
                         <address>서울특별시 강남구 강남로 124로 15호</address>
+                        <em>TEL. 02-1542-7809</em>
                         <a href="tel:02-1542-7809">TEL. 02-1542-7809</a>
                         <p>AM 09:00 ~ 18:00<br>BrakTime  15:00 ~ 16:30</p>
                     </div>
@@ -88,28 +90,31 @@
                         <span class="ff_nm">Online Booking</span><br>
                         <span class="fw_400">온라인 예약</span>
                     </h2>
-                    <form action="#" method="post">
-                        <fieldset class="clear">
-                            <legend class="hide">온라인 예약 영역</legend>
-                            <p>
-                               <label for="user_name"><span class="hide">예약자 성함</span></label>
-                               <input type="text" id="user_name" name="user_name" value="" placeholder="예약자 성함">
-                            </p>
-                            <p>
-                               <label for="user_people"><span class="hide">예약인원</span></label>
-                               <input type="number" id="user_people" name="user_people" value="" min="1" placeholder="예약인원">
-                            </p>
-                            <p>
-                               <label for="user_date"><span class="hide">예약날짜</span></label>
-                               <input type="date" id="user_date" name="user_date" value="">
-                            </p>
-                            <p>
-                               <label for="user_time"><span class="hide">예약시간</span></label>
-                               <input type="time" id="user_time" name="user_time" value="">
-                            </p>
-                        </fieldset>
-                        <p><input type="submit" value="예약하기"></p>
-                    </form>
+                    <div class="table clear">
+                        <form action="#" method="post">
+                            <fieldset>
+                                <legend class="hide">온라인 예약 영역</legend>
+                                <p>
+                                    <input type="text" id="user_name" placeholder="ex: 홍길동" autocomplete="off" required>
+                                    <label for="user_name"><span>예약자 성함</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <input type="text" id="user_people" placeholder="ex: 3" autocomplete="off" required>
+                                    <label for="user_people"><span>예약인원</span></label>
+                                </p>
+                                <p>
+                                    <input type="text" id="user_date" placeholder="ex: 0000-00-00" autocomplete="off" required>
+                                    <label for="user_date"><span>예약날짜</span></label>
+                                </p>
+                                <p>
+                                    <input type="text" id="user_time" placeholder="ex: 오전 09:00 or 오후 19:00" autocomplete="off" required>
+                                    <label for="user_time"><span>예약시간</span></label>
+                                </p>
+                            </fieldset>
+                            <button type="submit">예약하기</button>
+                        </form>
+                    </div>
                 </section>
             </div>
         </div>

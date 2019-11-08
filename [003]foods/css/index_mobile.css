@@ -22,40 +22,45 @@ header button { display:block; float:right; margin:1.85rem 2rem 0 0; width:3.5re
 .visual .deco2 img:nth-child(3) { right:-8.35rem; bottom:11.25rem; width:9.3rem; }
 .visual .deco2 img:nth-child(4) { right:-10.65rem; top:-4.65rem; width:21.2rem; }
 
-.noodle { height:34.9rem; letter-spacing:-0.0375rem; }
-.noodle:after { bottom:-4.6rem; width:20rem; height:7.1rem; background-size:100% auto; }
-.noodle h2:before { margin:0 auto 1.4rem; width:4.15rem; height:5.8rem; }
-.noodle h2 { padding:2.5rem 0 2.2rem 0; font-size:1.8rem; color:#fff; }
+.noodle:after { bottom:-4.6rem; width:20rem; height:6.8rem; background-size:100% auto; }
+.noodle h2 { padding:10rem 0 2.2rem 0; background-position:center 3.5rem; background-size:4.15rem auto; font-size:1.8rem; color:#fff; }
 .noodle p { padding:0 1rem; margin:0 auto; font-size:.7rem; line-height:.9rem; } /* .noodle p 가로사이즈 제거, .noodle p 좌우패딩으로 전환 */
 .noodle p br { display:none; }
-.noodle ul { display:flex; flex-direction:row; padding:2.5rem .5rem 0; }
+.noodle ul { display:flex; flex-direction:row; padding:2.5rem 5% 15%; }
 .noodle li { flex-grow:1; margin:0; font-size:1rem; } /* .noodle li 좌우 여백을 좀더 줄여보세요~~ 아니면 flex를 사용해보세요 */
 .noodle li a { margin:0 auto; width:2.65rem; height:8.25rem; }
 .noodle li a span { top:1.15rem; width:1rem; }
 
-.info { height:61rem; background-size:auto 35.5rem; background-position:bottom center;}
-.info .box { position:static; left:auto; top:auto; transform:none; width:100%; height:auto; letter-spacing:-0.005rem; -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none; }
+.info { padding:0; background-size:auto 100%; background-position:bottom center;}
+.info .box { position:static; left:auto; top:auto; transform:none; width:100%; height:auto; box-shadow:none; }
 .info h2 { margin:0; font-size:1.65rem; line-height:1.5rem; }
 .info h2 span:last-child { font-size:1rem; }
-.store { float:none; width:100%; height:26rem; }
+.store { float:none; padding:0 0 2.25rem; width:100%; height:100%; clear:both; }
+.store:after { content:""; display:block; clear:both; }
 .store h2 { padding:6.65rem 0 0; }
 .store h2:after { margin:1.5rem 0 2.5rem; height:15px; }
 .store strong { font-size:.7rem; line-height:1.1rem; }
 .store address { font-size:.6rem; }
-.store a { font-size:.8rem; line-height:2.25rem; }
+.store em { display:none; }
+.store a { display:inline-block; padding:0 1rem; font-size:.8rem; color:rgba(213, 182, 147, .5); line-height:2.25rem; }
 .store p { font-size:.6rem; line-height:.85rem; }
+.store > div { width:50%; }
+.store > div:nth-child(2) { float:left; } /* .store .inner > div:nth-child(2) 여기있는 좌우 배치되어있는 div를 가로사이즈 50%로 */
+.store > div:nth-child(3) { float:right; } /* .store .inner > div:nth-child(2) 여기있는 좌우 배치되어있는 div를 가로사이즈 50%로 */
 .store > div:last-child { padding:0; }
 .store > div:last-child:after { display:none; }
-.store > div:nth-child(2) { float:left; width:50%; } /* .store .inner > div:nth-child(2) 여기있는 좌우 배치되어있는 div를 가로사이즈 50%로 */
-.store > div:nth-child(3) { float:right; width:50%; } /* .store .inner > div:nth-child(2) 여기있는 좌우 배치되어있는 div를 가로사이즈 50%로 */
-.booking { float:none; margin:2.5rem auto 0; width:80%; height:28.8rem; background:#fff; }
-.booking h2 { padding:1.5rem 0; }
-.booking form { margin:.5rem auto 0; width:100%; text-align:center; }
-.booking fieldset p { padding:1.65rem 0 0; width:90%; height:2.5rem; text-align:left; }
-.booking fieldset p:nth-child(2) { padding:0; }
-.booking fieldset p:nth-child(2), .booking form p:nth-child(3), .booking fieldset p:nth-child(4), .booking form p:nth-child(5) { float:none; margin:0 auto; }
-.booking fieldset p label { width:2rem; height:1.85rem; }
-.booking fieldset input { width:80%; height:2.5rem; }
-.booking fieldset input::-webkit-input-placeholder { font-size:.65rem; }
-.booking form > p { margin:2.5rem 0 0; }
-.booking form > p input { width:10.15rem; height:2.6rem; border-radius:1.15rem; font-size:.9rem; }
+.booking { float:none; padding:1.7rem 0 2rem; margin:3rem auto 3.5rem; width:80%; height:100%; background:#fff; }
+.booking h2 { padding:0; }
+.booking .table { margin:0 auto; width:100%; text-align:center; }
+.booking .table p { padding:.65rem 0 0; width:70%; height:2.5rem; line-height:2.5rem; }
+.booking .table p:nth-child(2),
+.booking .table p:nth-child(3),
+.booking .table p:nth-child(4),
+.booking .table p:nth-child(5) { float:none; margin:.8rem auto 0; }
+.booking .table p input { font-size:.65rem; }
+.booking .table p label { bottom:1.25rem; font-size:.6rem; }
+.booking .table p label span { bottom:-1.25rem; }
+.booking .table p input:focus + label span,
+.booking .table p input:valid + label span { color:#777; transform:translateY(-1.25rem); }
+.booking .table p label:after { bottom:-1.35rem; }
+.booking .table button { margin:2.5rem 0 0; width:10rem; height:2.5rem; border-radius:1.15rem; background:#d5b693; font-size:.8rem; }
