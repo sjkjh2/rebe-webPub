@@ -9,8 +9,23 @@ header { height:2.5rem; }
 h1 a { width:4.15rem; height:1rem; }
 h1 a:last-child { margin-left:.75rem; width:4.1rem; }
 
+/* mobile menu */
+.mobile_menu__open { position:absolute; top:.3rem; right:0; width:2.05rem; height:1.8rem; background:url("../images/ico_menu.png") no-repeat center / 1.25rem auto; }
+.mobile_menu--box { display:none; position:absolute; top:0; right:0; bottom:0; z-index:100; width:15rem; height:100vh; background:#fff; color:#333; }
+.mobile_menu--box::after { content:""; display:block; position:absolute; right:15rem; top:0; bottom:0; width:51.2rem; height:100vh; background:rgba(0, 0, 0, .5); }
+.mobile_member { margin:2.5rem 0 0 0; padding:.75rem 0; font-size:.7rem; text-align:center; }
+.mobile_member a { display:inline-block; padding:.4rem 0; width:48%; border:1px solid #a4a4a4; border-radius:.15rem; }
+.mobile_gnb { border-top:1px solid #d9d9d9; }
+.mobile_gnb li { margin:.75rem 0 0; font-size:.95rem; font-weight:700; }
+.mobile_gnb a { display:block; line-height:1.4rem; }
+.mobile_gnb > li > a { background:url("../images/ico_arr_off.png") no-repeat right center / .7rem; }
 
-.search { top:.3rem; right:0; }
+
+.mobile_menu__close { position:absolute; left:0; right:0; top:0; height:2.5rem; background:#3f69b8; }
+.mobile_menu__close button { position:absolute; right:0; top:0; width:2.5rem; height:2.5rem; background:url("../images/ico_close.png") no-repeat center / 1rem; }
+/* //mobile menu */
+
+.search { top:.3rem; right:2.2rem; }
 .search__open { width:1.8rem; height:1.8rem; background-size:1rem auto; }
 .search__form { display:none; top:2.5rem; padding:1rem 0; }
 .search__keyword ul { margin:0 .85rem; height:1.6rem; }
