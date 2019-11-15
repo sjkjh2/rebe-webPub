@@ -45,3 +45,16 @@ header >  div button.search { width:36px; height:31px; background:url("../images
 .business .right li .bg3 { background:url("../images/bg_slide3.png") no-repeat; }
 .business .right li strong { font-size:18px; color:#181818; }
 .business .right li p { margin:29px 0 0; padding:16px 0 0; border-top:1px solid #cfcfcf; font-size:15px; color:#4c4c4c; }
+.company { padding:90px 0 75px; background:#ececec; text-align:center; }
+.company h2 { color:#2b2b2b; font-size:36px; }
+.company h2::after { content:""; display:block; margin:25px auto 37px; width:30px; height:3px; background:#544e4e; }
+.company h2 span { color:#007ddd; }
+.company > div > div { display:inline-block; position:relative; padding:0 0 0 84px; width:340px; box-sizing:border-box; color:#2b2b2b; text-align:left; }
+.company > div > div::before { position:absolute; left:0; top:0; }
+.company > div > div:nth-of-type(1)::before { content:url("../images/ico_company1.png"); }
+.company > div > div:nth-of-type(2)::before { content:url("../images/ico_company2.png"); }
+.company > div > div:nth-of-type(3)::before { content:url("../images/ico_company3.png"); }
+.company > div > div ~ div { margin:0 0 0 73px; }
+.company h3 { padding:0 0 16px; font-size:22px; line-height:1; }
+.company li { position:relative; padding:0 0 0 13px; font-size:16px; line-height:28px; }
+.company li::before { content:""; position:absolute; left:0; top:calc(50% - 2.5); width:5px; height:5px; background:#898989; border-radius:100%; }

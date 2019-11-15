@@ -1,0 +1,71 @@
+html { font-size:20px; }
+body { font-size:1rem; }
+
+.wrapper { padding:0 .75rem; max-width:100%; }
+.pc { display:none; }
+
+/* header */
+header { height:2.5rem; }
+header h1 { margin:.75rem 0 0 0; }
+header .mobile { display:block; }
+header h1 a { height:1rem; }
+header h1 a:first-child { width:4.15rem; }
+header h1 a:last-child { margin:0 0 0 .75rem; width:4.1rem; }
+.mobile { float:right; margin:.3rem 0 0; }
+.mobile .search > button,
+.mobile .menu > button { width:1.85rem; height:1.85rem; }
+
+/* search */
+.mobile .search { float:left; }
+.mobile .search > button { background:url("../images/ico_search_blue.png") no-repeat center / 1rem auto; }
+.mobile .search__form { display:none; position:fixed; left:0; right:0; top:2.5rem; z-index:100; padding:1rem 0 1rem; width:100%; background:linear-gradient(to right, #288bcc 0%,#165fa2 100%); }
+.mobile .search__form ul { overflow:hidden; margin:0 30px; height:1.6rem; }
+.mobile .search__form li { float:left; margin:0 2px; }
+.mobile .search__form li a { display:block; padding:.4rem .5rem; border:1px solid rgba(255, 255, 255, .4); border-radius:.25rem; font-size:.6rem; color:#fff; }
+.mobile .search__form .controls button { position:absolute; top:0; width:1.1rem; height:1.6rem; background:url("../images/ico_prev.png") no-repeat center / .35rem .6rem; }
+.mobile .search__form .controls button:first-child { left:.75rem; }
+.mobile .search__form .controls button:last-child { right:.75rem; background-image:url("../images/ico_next.png"); }
+.mobile .search__form label + div { width:100%; height:2.2rem; border-bottom:1px solid rgba(255, 255, 255, .4); }
+.mobile .search__form input { float:left; width:90%; height:100%; border:0 none; background:transparent; font-size:.7rem; color:#fff; outline:none; }
+.mobile .search__form input::-webkit-input-placeholder { font-size:.7rem; color:rgba(255, 255, 255, .4)}
+.mobile .search__form input::-ms-clear,
+.mobile .search__form input::-ms-reveal { display:none; width:0; height:0; }
+.mobile .search__form input::-webkit-search-decoration,
+.mobile .search__form input::-webkit-search-cancel-button,
+.mobile .search__form input::-webkit-search-results-button,
+.mobile .search__form input::-webkit-search-results-decoration { display: none; }
+.mobile .search__form button[type="submit"] { float:right; width:10%; height:2.2rem; background:url("../images/ico_search_white.png") no-repeat 90% center / 1rem auto; }
+
+/* menu */
+.mobile .menu { float:right; }
+.mobile .menu button { margin:0 0 0 3px; background:url("../images/ico_menu.png") no-repeat center / 1.25rem auto; }
+.mobile .menu > div { display:none; position:fixed; left:0; right:0; top:0; bottom:0; z-index:100; background:rgba(0, 0, 0, .5); }
+.mobile .menu__box { float:right; width:20rem; height:100vh; background:#fff; }
+.mobile .util { float:none; padding:.75rem 0; margin:2.5rem 0 0; width:100%; border-bottom:1px solid #d9d9d9; }
+.mobile .util dd { width:49%; text-align:center; }
+.mobile .util dd:last-child { margin:0 0 0 2%; }
+.mobile .util a { display:block; width:100%; border:1px solid #a4a4a4; border-radius:.15rem; font-size:.7rem; line-height:1.4rem; }
+.mobile .list_type1 > li { border-bottom:1px solid #d9d9d9; }
+.mobile .list_type1 > li > a { display:block; background:url("../images/ico_arr_off.png") no-repeat right center / .7rem; font-size:.95rem; font-weight:700; line-height:2.45rem; }
+.mobile .list_type1 > li > a.on { background-image:url("../images/ico_arr_on.png"); }
+.mobile .list_type2 { padding:.75rem .85rem; border-top:1px solid #d9d9d9; background:#f7f7f7; }
+.mobile .list_type2 li { margin:.75rem 0 0; }
+.mobile .list_type2 li:first-child { margin:0; }
+.mobile .list_type2 li a { display:block; font-size:.7rem; font-weight:400; line-height:1; color:#666; }
+.mobile .list_type2:not(.block) { display:none; }
+.mobile .woori_sns_news { float:none; margin:1rem 0 0; }
+.mobile .woori_sns_news dt { float:none; }
+.mobile .woori_sns_news dd a { width:1.65rem; height:1.65rem; }
+.mobile .woori_sns_news dd:nth-child(2) a { margin:0; }
+.mobile .menu__close { position:absolute; left:0; right:0; top:0; height:2.5rem; background:#3f69b8; }
+.mobile .menu__close button { position:absolute; right:0; top:0; width:2.5rem; height:2.5rem; background:url("../images/ico_close.png") no-repeat center / 1rem; }
+
+/* gnb */
+.gnb_bar { top:2.5rem; height:2rem; z-index:0; }
+.gnb_bar nav .list_type1 li { position:relative; margin:0 1.5rem 0 0; line-height:2rem; }
+.gnb_bar nav .list_type1 li.col_bar:after { display:none; }
+.gnb_bar nav .list_type1 li a { padding:0; margin:0; font-size:.75rem; font-weight:400; transition:none; }
+.gnb_bar nav .list_type1 li a:hover,
+.gnb_bar nav .list_type1 li a:focus { color:#333; }
+.gnb_bar nav .list_type1 li.active a { font-weight:700; color:#288bcc; }
+.gnb_bar nav .list_type1 li.active a:after { content:""; position:absolute; left:0; bottom:0; width:100%; height:2px; background:#3f69b8; }
