@@ -1,6 +1,6 @@
 .wrap { width: 100%; }
 .layout { position:relative; box-sizing:border-box; padding:0 15px; margin:0 auto; max-width:1200px; }
-/* .is_mobile { display:none; } */
+.is_mobile { display:none; }
 
 /* header */
 header { position:fixed; left:0; right:0; top:0; z-index:100; box-sizing:border-box; height:100px; border-bottom:1px solid #ededed; background:#fff; }
