@@ -30,6 +30,71 @@
           <a href=""><strong>로그인</strong></a>
           <a href=""><strong>회원가입</strong></a>
         </div>
+        <!-- mobile menu -->
+        <div class="is_mobile">
+          <button type="button" class="mobile_menu__open"><span class="hide">모바일 전체메뉴 열기</span></button>
+          <div class="mobile_menu--box">
+            <div class="layout">
+              <div class="mobile_member">
+                <a href=""><strong>로그인</strong></a>
+                <a href=""><strong>회원가입</strong></a>
+              </div>
+              <ul class="mobile_gnb">
+                <li class="on">
+                  <a href="" role="button">금융서비스</a>
+                  <ul class="mobile__sub--list2">
+                    <li><a href="">-노후준비 및 재무상태</a></li>
+                    <li><a href="">-추천금융상품</a></li>
+                    <li><a href="">-고객이벤트</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="" role="button">관심정보</a>
+                  <ul class="mobile__sub--list2">
+                    <li><a href="">-건강</a></li>
+                    <li><a href="">-재테크</a></li>
+                    <li><a href="">-생활</a></li>
+                    <li><a href="">-여가</a></li>
+                    <li><a href="">-사람</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="" role="button">교육/세미나</a>
+                  <ul class="mobile__sub--list2">
+                    <li><a href="">-세미나/특강 신청</a></li>
+                    <li><a href="">-시니어플러스 센터예약</a></li>
+                    <li><a href="">-동영상 특강</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="" role="button">여행/쇼핑</a>
+                  <ul class="mobile__sub--list2">
+                    <li><a href="">-시니어특화쇼핑</a></li>
+                    <li><a href="">-여행사 제휴상품</a></li>
+                    <li><a href="">-여행 프로그램</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="" role="button">일자리정보</a>
+                  <ul class="mobile__sub--list2">
+                    <li><a href="">-일자리정보</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <dl class="mobile_sns_news">
+                <dt><strong class="hide">우리은행 SNS 소식</strong></dt>
+                <dd><a href="" target="_blank" title="새창열림"><span class="hide">페이스북</span></a></dd>
+                <dd><a href="" target="_blank" title="새창열림"><span class="hide">네이버 블로그</span></a></dd>
+                <dd><a href="" target="_blank" title="새창열림"><span class="hide">유튜브</span></a></dd>
+                <dd><a href="" target="_blank" title="새창열림"><span class="hide">인스타그램</span></a></dd>
+              </dl>
+              <div class="mobile_menu__close">
+                <button type="button"><span class="hide">모바일 전체메뉴 닫기</span></button>
+              </div>
+            </div>
+            </div>
+        </div>
+        <!-- //mobile menu -->
         <div class="search">
           <button type="button" class="search__open"><span class="hide">검색 창 열기</span></button>
           <form action="#" method="GET" class="search__form hide">
@@ -49,8 +114,8 @@
                 <li><a href=""><span># 은퇴맞춤 설계</span></a></li>
               </ul>
               <div class="search__keyword--controls">
-                <button><span class="hide">이전 키워드 보기</span></button>
-                <button><span class="hide">다음 키워드 보기</span></button>
+                <button type="button"><span class="hide">이전 키워드 보기</span></button>
+                <button type="button"><span class="hide">다음 키워드 보기</span></button>
               </div>
             </div>
             <fieldset class="layout">
@@ -76,56 +141,6 @@
           <dd><a href="" target="_blank" title="새창열림"><span class="hide">유튜브</span></a></dd>
           <dd><a href="" target="_blank" title="새창열림"><span class="hide">인스타그램</span></a></dd>
         </dl>
-<!--         
-          <div class="menu">
-            <button type="button" class="menu__open mobile">전체메뉴 열기</button>
-            <ul class="gnb_mobile mobile">
-              <li>
-                <a href="">금융서비스</a>
-                <ul>
-                  <li><a href="">-노후준비 및 재무상태</a></li>
-                  <li><a href="">-추천금융상품</a></li>
-                  <li><a href="">-고객이벤트</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="">관심정보</a>
-                <ul>
-                  <li><a href="">-건강</a></li>
-                  <li><a href="">-재테크</a></li>
-                  <li><a href="">-생활</a></li>
-                  <li><a href="">-여가</a></li>
-                  <li><a href="">-사람</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="">교육/세미나</a>
-                <ul>
-                  <li><a href="">-세미나/특강 신청</a></li>
-                  <li><a href="">-시니어플러스 센터예약</a></li>
-                  <li><a href="">-동영상 특강</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="">여행/쇼핑</a>
-                <ul>
-                  <li><a href="">-시니어특화쇼핑</a></li>
-                  <li><a href="">-여행사 제휴상품</a></li>
-                  <li><a href="">-여행 프로그램</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="">일자리정보</a>
-                <ul>
-                  <li><a href="">-일자리정보</a></li>
-                </ul>
-              </li>
-            </ul>
-            <div class="menu__close mobile">
-              <button><span class="hide">전체메뉴 닫기</span></button>
-            </div>
-          </div> -->
-
       </section>
     </header>
     <!-- //header -->
@@ -182,7 +197,7 @@
     </nav>
     <!-- //gnb -->
     <!-- main -->
-    <main>
+    <main id="contents">
       <div></div>
     </main>
     <!-- //main -->
