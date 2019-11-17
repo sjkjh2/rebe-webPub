@@ -1,0 +1,66 @@
+/* css페이지 */
+* { list-style:none; padding:0; margin:0; text-decoration:none; }
+
+.btn { width:100px; height:50px; background:blue; color:#fff; }
+body.on { background:pink; }
+.menu { position:fixed; right:-100%; top:0; height:100%; width:200px; background:gray; transition:right .5s; }
+.menu.on { right:0; }
+
+.popup { display:none; position:absolute; left:50%; top:50%; z-index:101; transform:translate(-50%, -50%); width:200px; height:200px; background:#ffffff; border:1px solid red; }
+.dim { display:none; position:fixed; left:0; top:0; right:0; bottom:0; z-index:100; background:rgba(0, 0, 0, .5);}
+
+.tab { display:flex; }
+.tab li { flex:1; }
+.tab li a { display:block; height:50px; line-height:50px; text-align:center; background:lightgray; }
+.tab li.on a { background:skyblue; }
+.tabs > div { display:none; }
+.tabs > div.on { display:block; }
+
+.faq > ul > li > a { position:relative; display:block; border:1px solid red; padding:10px; transition:background .5s, color .3s; }
+.faq > ul > li > a:after { content:"▽"; position:absolute; right:10px; transform:rotate(0deg); transition:.3s; }
+.faq > ul > li > div { display:none; }
+.faq > ul > li.on > a { background:tomato; color:#ffffff; }
+.faq > ul > li.on > a:after { transform:rotate(180deg); }
+
+header {margin:0 0 30px; transition:all .5s; }
+header.fix { position:fixed; left:0; right:0; background:#000; }
+header nav { text-align:center; }
+.lnb > li { display:inline-block; }
+.lnb > li > a { display:block; padding:5px 20px; border:1px solid orange; }
+.lnb > li ul { position:absolute; display:none; }
+.lnb > li ul a { display:block; border:1px solid tomato; background:#fff; }
+.lnb > li.on ul { display:block; }
+
+
+.select { display:inline-block; position:relative; }
+.select button { position:relative; padding:2px 18px 2px 10px; border:1px solid orange; }
+.select button::after { content:"▽"; position:absolute; right:5px; transform:rotateX(0deg); transition:transform .5s; }
+.select button.on::after { transform:rotate(180deg); }
+.select ul { position:absolute; width:100%; display:none; }
+.select a { display:block; height:20px; line-height:20px; background:#ffffff; border:1px solid gray; transition:all .5s; }
+.select a:hover { background:skyblue; color:#fff; text-indent:4px; }
+
+.top { position:fixed; right:30px; bottom:30px; width:60px; height:60px; border-radius:100%; }
+
+
+section.box { height:500px; border:1px solid blue; }
+section.box * { display:block; width:60px; height:60px; }
+section.box div { border:5px solid blue; }
+section.box p { border:5px dotted orange; }
+section.box span { border:5px dashed pink; }
+
+section.box1 * { position:absolute;  }
+section.box1 div { left:0; transition:all .5s; }
+section.box1 p { right:0; transition:all .5s .2s; }
+section.box1 span { opacity:0; transform:scale(1); transition:all .5s .5s; }
+section.box1.on div { left:100px; }
+section.box1.on p { right:100px; }
+section.box1.on span { opacity:1; transform:scale(2); }
+section.box2 div { transform:translate(0px, 0px); transition:all .5s; }
+section.box2 p { position:absolute; right:0; transform:rotate(0deg); transition:all .5s 5s;}
+section.box2 span { margin:0 auto; transform:translateY(0); opacity:0; transition:all .5s 1s;}
+section.box2.on div { transform:translate(20%, 30px); }
+section.box2.on p { right:30%; transform:rotate(360deg);}
+section.box2.on span { transform:translateY(100px); opacity:1;}
+
+.bar { position:fixed; left:0; bottom:0; width:0; height:30px; background:-webkit-gradient(linear, 80% 20%, 10% 21%, from(#866400), to(#FF4E28)) }
