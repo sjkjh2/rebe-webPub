@@ -15,17 +15,19 @@ header > div a.mypage { background:url("../images/ico_user.png") no-repeat cente
 header >  div button.menu { display:none; }
 header >  div button.search { width:36px; height:31px; background:url("../images/ico_search.png") no-repeat center #007ddd / 15px auto; }
 
-.visual .bg1 { position:relative; height:696px; background:url("../images/img_visual.jpg") no-repeat center top / cover; } /* css로 이미지는 관리자만 */
-.visual .bg1 > div { position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); text-align:center; color:rgba(255, 255, 255, .8); }
-.visual .bg1 > div h3 { font-size:65px; letter-spacing:-0.23px; line-height:1; text-transform:uppercase; }
-.visual .bg1 > div span { display:block; padding:32px 0 26px; font-size:28px; line-height:1; }
-.visual .bg1 > div p { padding:0 0 38px; font-size:18px; line-height:25px; letter-spacing:-0.46; }
-.visual .bg1 > div a { display:inline-block; padding:0 24px 0 22px; height:42px; background:rgba(0, 161, 255, .6); font-size:13px; color:#fff; line-height:42px; border-radius:42px; }
-.visual .bg1 > div a:after { content:""; display:inline-block; margin:0 0 0 10px; width:5px; height:10px; background:url("../images/bu_arrow_right.png") no-repeat center / 100% auto; }
+.visual .bx { position:relative; height:696px; background:url("../images/img_visual.jpg") no-repeat center top / cover; } /* css로 이미지는 관리자만 */
+.visual .bg2 { background-image:url("../images/img_visual2.jpeg");}
+.visual .bx > div { position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); text-align:center; color:rgba(255, 255, 255, .8); }
+.visual .bx > div h3 { font-size:65px; letter-spacing:-0.23px; line-height:1; text-transform:uppercase; }
+.visual .bx > div span { display:block; padding:32px 0 26px; font-size:28px; line-height:1; }
+.visual .bx > div p { padding:0 0 38px; font-size:18px; line-height:25px; letter-spacing:-0.46; }
+.visual .bx > div a { display:inline-block; padding:0 24px 0 22px; height:42px; background:rgba(0, 161, 255, .6); font-size:13px; color:#fff; line-height:42px; border-radius:42px; }
+.visual .bx > div a:after { content:""; display:inline-block; margin:0 0 0 10px; width:5px; height:10px; background:url("../images/bu_arrow_right.png") no-repeat center / 100% auto; }
 .visual .controls { width:1280px; position:absolute; left:50%; top:321px; transform:translateX(-50%); }
 .visual .controls button { width:53px; height:53px; background:no-repeat transparent center; }
 .visual .controls button:first-child { float:left; background-image:url("../images/btn_prev.png"); }
 .visual .controls button:last-child { float:right; background-image:url("../images/btn_next.png"); }
+.visual_slide .bx-controls { display:none; }
 
 .business { padding:100px 0 118px; background:#fff; }
 .business .left { float:left; position:relative; padding:130px 0 0; }
@@ -38,13 +40,13 @@ header >  div button.search { width:36px; height:31px; background:url("../images
 .business .left .controls .prev { background:url("../images/btn_left.png"); }
 .business .left .controls .next { background:url("../images/btn_right.png"); }
 .business .right { float:right; }
-.business .right li { float:left; padding:0 0 0 32px; width:303px; }
 .business .right li a { display:block; padding:291px 0 0; line-height:1; }
 .business .right li .bg1 { background:url("../images/bg_slide1.png") no-repeat; }
 .business .right li .bg2 { background:url("../images/bg_slide2.png") no-repeat; }
 .business .right li .bg3 { background:url("../images/bg_slide3.png") no-repeat; }
 .business .right li strong { font-size:18px; color:#181818; }
 .business .right li p { margin:29px 0 0; padding:16px 0 0; border-top:1px solid #cfcfcf; font-size:15px; color:#4c4c4c; }
+.business .bx-controls { display:none; }
 .company { padding:90px 0 75px; background:#ececec; text-align:center; }
 .company h2 { color:#2b2b2b; font-size:36px; }
 .company h2::after { content:""; display:block; margin:25px auto 37px; width:30px; height:3px; background:#544e4e; }

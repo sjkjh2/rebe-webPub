@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" media="(min-width:320px) and (max-width:1199px)" href="css/index_mobile.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="js/default.js" defer></script>
     <!-- 767 이하부터 모바일 디자인 표현
     768 이상부터 1199까지 타블렛 디자인 표현
     1200이상부터 웹디자인 표현 -->
@@ -35,17 +38,27 @@
     <main>
         <section class="visual">
             <h2 class="hide">회사 슬로건 및 광고</h2>
-            <div class="bg1">
-                <div>
-                    <h3>company</h3>
-                    <span>World wide global service clipart korea</span>
-                    <p>We, TongRo Image Stock, since commence<br> with producing digital Image slide</p>
-                    <a href="#">Learn Moren</a>
+            <div class="slider">
+                <div class="bg1 bx">
+                    <div>
+                        <h3>company</h3>
+                        <span>World wide global service clipart korea</span>
+                        <p>We, TongRo Image Stock, since commence<br> with producing digital Image slide</p>
+                        <a href="#">Learn Moren</a>
+                    </div>
+                </div>
+                <div class="bg2 bx">
+                    <div>
+                        <h3>우하하하</h3>
+                        <span>World wide global service clipart korea</span>
+                        <p>We, TongRo Image Stock, since commence<br> with producing digital Image slide</p>
+                        <a href="#">Learn Moren</a>
+                    </div>
                 </div>
             </div>
             <div class="controls">
-                <button><span class="hide">이전</span></button>
-                <button><span class="hide">다음</span></button>
+                <button class="prev"><span class="hide">이전</span></button>
+                <button class="next"><span class="hide">다음</span></button>
             </div>
         </section>
         <section class="business" id="contents">
@@ -58,28 +71,26 @@
                         <button class="next"><span class="hide">다음</span></button>
                     </div>
                 </div>
-                <div class="right">
-                    <ul>
-                        <li>
-                            <a class="bg1" href="">
-                                <strong>차별화된 글로벌 마케팅</strong>
-                                <p>글로벌 비즈니스의 시작부터 성공까지</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="bg2" href="">
-                                <strong>분야별 전문가의 성공 전략</strong>
-                                <p>글로벌 비즈니스의 시작부터 성공까지</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="bg3" href="">
-                                <strong>고객만족을 실현하는 서비스</strong>
-                                <p>글로벌 비즈니스의 시작부터 성공까지</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="slider2">
+                    <li>
+                        <a class="bg1" href="#a">
+                            <strong>차별화된 글로벌 마케팅</strong>
+                            <p>글로벌 비즈니스의 시작부터 성공까지</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="bg2" href="#a">
+                            <strong>분야별 전문가의 성공 전략</strong>
+                            <p>글로벌 비즈니스의 시작부터 성공까지</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="bg3" href="#a">
+                            <strong>고객만족을 실현하는 서비스</strong>
+                            <p>글로벌 비즈니스의 시작부터 성공까지</p>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </section>
         <section class="company">

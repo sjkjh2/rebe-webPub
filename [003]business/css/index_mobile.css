@@ -22,8 +22,8 @@ header > div button.search { background:url("../images/ico_search.png") no-repea
 .business .left h2 { font-size:.875rem; }
 .business .left .controls { padding:1.05rem 0 0; }
 .business .left .controls button { width:1.425rem; height:1.4rem; background-size:100% auto !important; }
-.business .right li { padding:0; width:7.575rem; }
-.business .right li ~ li { display:none; }
+/* .business .right li { padding:0; width:7.575rem; } */
+/* .business .right li ~ li { display:none; } */
 .business .right li a { padding:7.175rem 0 0; background-size:100% auto !important; }
 .business .right li strong { font-size:.625rem; }
 .business .right li p { margin:.525rem 0 0; padding:.525rem 0 0; font-size:.5rem; } 

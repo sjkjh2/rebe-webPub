@@ -153,9 +153,14 @@ $(document).ready(function(){  //문서가 준비가 되면 js가 실행을 함.
         var ele = $(this).offset().top + //박스의 위치값
         $(this).height(); //박스의 높이
         var src = $(window).scrollTop() + $(window).height(); // 스크롤 바 위쪽 + 화면의 높이
+        var scr_top = $(window).scrollTop();
 
         if(ele < src){
           $(this).addClass('on');
+          $(this).siblings('.box').removeClass('on'); //양방향 애니메이션
+        }
+        if( scr_top == 0 ){
+          $('section.box').removeClass('on'); //양방향 애니메이션
         }
       });
     });
@@ -175,7 +180,17 @@ $(document).ready(function(){  //문서가 준비가 되면 js가 실행을 함.
 
   }
   scroll();
-
+  
+  function agent() {
+    var agent = navigator.userAgent;
+    if( agent.math(/iPoone | iPad /)){ //만약에 사용자 기기가 애플이면
+      $('head').append('<link rel="stylesheet" href="ios.css">'); //애플에 대응
+    }else{
+      $('head').append('<link rel="stylesheet" href="android.css">');
+    }
+    console.log(agent);
+  }
+  agent();
 
 
 });

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>하이원리조트</title>
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="js/default.js" defer></script>
+</head>
+<body>
+    <div class="headerWrap">
+        <div class="headerTop">
+            <div class="topwrap">
+                <h2 class="hide">부대시설</h2>
+                <ul class="list_left">
+                    <li><a href="#"><span class="on">리조트</span></a></li>
+                    <li><a href="#"><span>호텔&amp;콘도</span></a></li>
+                    <li><a href="#"><span>워터월드</span></a></li>
+                    <li><a href="#"><span>스키</span></a></li>
+                    <li><a href="#"><span>콜프</span></a></li>
+                    <li><a href="#"><span>카지노</span></a></li>
+                    <li><a href="#"><img src="images/header_top_vr.png" alt="VR"></a></li>
+                </ul>
+                <ul class="list_right">
+                    <li><a href="#"><img src="images/gnb_right_map.png" alt="전체맵"></a></li>
+                    <li><a href="#"><img src="images/login_icon.png" alt="로그인"></a></li>
+                    <li><a href="#"><img src="images/gnb_right_search.png" alt="검색"></a></li>
+                    <li>
+                        <label for="country">국가선택</label>
+                        <select name="country" id="country">
+                            <option value="">KOR</option>
+                            <option value="">USA</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="headerGnb">
+            <h1><a href="#">하이원리조트</a></h1>
+            <h2 class="hide">메뉴</h2>
+            <ul>
+                <li><a href="#">통합예약</a></li>
+                <li><a href="#">객실</a></li>
+                <li><a href="#">다이닝</a></li>
+                <li><a href="#">이벤트&amp;패키지</a></li>
+                <li><a href="#">즐길거리</a></li>
+                <li><a href="#">하이원 이야기</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">이용안내</a></li>
+            </ul>
+            <span><a href="#"><img src="images/header_jtys.png" alt="정태영상"></a></span>
+        </div>
+    </div>
+    <div class="visual">
+        <p>꽃, 바람, 숲, 빛과 함께하는 <strong>국민쉼터</strong></p>
+    </div>
+    <div class="side_lnbWrap">
+        <div class="side_lnb">
+            <ul class="lnbTop">
+                <li class="lnb_icon">book</li>
+                <li><a href="#">바로<br>예약</a></li>
+            </ul>
+            <ul class="lnbBottom">
+                <li><a href="#">객실</a></li>
+                <li><a href="#">다이닝</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">하이원이야기</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">이용안내</a></li>
+                <li><a href="#">오시는길</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <a href="" class="scrolltop">페이지 상단이동</a>
+
+    <div class="main">
+        <div class="mainwrap">
+            <div class="nav">
+                <ul>
+                    <li><a href="#" class="home">home</a></li>
+                    <li>
+                        <label for="nav_first">하이원 이야기</label>
+                        <select name="first" id="nav_first">
+                            <option value="">하이원 이야기</option>
+                            <option value="">1</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="nav_second">하이원 소식</label>
+                        <select name="second" id="nav_second">
+                            <option value="">하이원 소식</option>
+                            <option value="">2</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="nav_list">공지</label>
+                        <select name="last" id="nav_last">
+                            <option value="">공지</option>
+                            <option value="">3</option>
+                        </select>
+                    </li>
+                    <li><a href="#" class="sns">SNS</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <h2 class="hide">본문</h2>
+                <h3>공지</h3>
+                <p>하이원리조트의 새로운 소식을 가장 먼저 알려드립니다.</p>
+                <ul class="list_type">
+                    <li><a href="#">호텔&amp;콘도</a></li>
+                    <li><a href="#">공연&amp;행사</a></li>
+                    <li><a href="#">스키</a></li>
+                    <li><a href="#">골프</a></li>
+                    <li><a href="#">카지노</a></li>
+                    <li><a href="#">워터월드</a></li>
+                    <li><a href="#">회사일반</a></li>
+                </ul>
+                <div class="search">
+                    <label for="title">제목</label>
+                    <select name="title" id="title">
+                        <option value="">제목</option>
+                        <option value="">1</option>
+                    </select>
+                    <input type="text" id="search" placeholder="검색단어 입력" title="검색어 입력">
+                    <button>검색</button>
+                </div>
+                <p class="number_type">
+                    총 <strong>45</strong>건 [<strong>1</strong> / 5 페이지]
+                </p>
+                <table>
+                    <colgroup>
+                        <col style="width:5%">
+                        <col style="width:10%">
+                        <col>
+                        <col style="width:10%">
+                        <col style="width:15%">
+                        <col style="width:5%">
+                        <col style="width:15%">
+                        <col style="width:10%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>분류</th>
+                            <th>제목</th>
+                            <th>시작일</th>
+                            <th>종료일</th>
+                            <th>파일</th>
+                            <th>작성일</th>
+                            <th>조회수</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>36</td>
+                            <td>호텔&amp;콘도</td>
+                            <td class="icon1 tit">하이원 종교 활동 안내</td>
+                            <td>2019-08-29</td>
+                            <td>2020-12-31</td>
+                            <td class="icon2">이미지파일</td>
+                            <td>2019.08.29</td>
+                            <td>65</td>
+                        </tr>
+                        <tr>
+                            <td>35</td>
+                            <td>골프</td>
+                            <td class="icon11 tit">추석맞이 그린피 할일 이벤트</td>
+                            <td>2019-09-10</td>
+                            <td>2019-09-19</td>
+                            <td class="icon2">이미지파일</td>
+                            <td>2019.08.26</td>
+                            <td>414</td>
+                        </tr>
+                        <tr>
+                            <td>34</td>
+                            <td>스키</td>
+                            <td class="tit">2019/20 하이원 스키장 동호회 모집</td>
+                            <td>2019-08-26</td>
+                            <td>2019-09-06</td>
+                            <td class="icon3">폴더파일</td>
+                            <td>2019.08.26</td>
+                            <td>116</td>
+                        </tr>
+                        <tr>
+                            <td>33</td>
+                            <td>회사일반</td>
+                            <td class="tit">[모집] 제2기 강원랜드 시민참여혁신단</td>
+                            <td>2019-08-23</td>
+                            <td>2019-09-19</td>
+                            <td class="icon3">폴더파일</td>
+                            <td>2019.08.23</td>
+                            <td>69</td>
+                        </tr>
+                        <tr>
+                            <td>32</td>
+                            <td>워터월드</td>
+                            <td class="icon11 tit">[8월19일(월) 부터] 워터월드 순환 고객셔틀 안내</td>
+                            <td>2019-08-19</td>
+                            <td>2019-09-15</td>
+                            <td class="icon2">이미지파일</td>
+                            <td>2019.08.16</td>
+                            <td>5,043</td>
+                        </tr>
+                        <tr>
+                            <td>31</td>
+                            <td>호텔&amp;콘도</td>
+                            <td class="icon11 tit">8.12(월)~14(수) 카사시네마 휴관 안내</td>
+                            <td>2019-08-12</td>
+                            <td>2019-08-14</td>
+                            <td class="icon2">이미지파일</td>
+                            <td>2019.08.12</td>
+                            <td>466</td>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td>골프</td>
+                            <td class="icon11 tit">SKY72 Tee카드 회원 대상 제휴혜택</td>
+                            <td>2019-08-12</td>
+                            <td>2019-07-31</td>
+                            <td class="icon2">이미지파일</td>
+                            <td>2019.08.12</td>
+                            <td>261</td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td>골프</td>
+                            <td class="icon11 tit">[당첨자 발표]하이원 CC 프로암 이벤트</td>
+                            <td>2019-08-09</td>
+                            <td>2019-08-25</td>
+                            <td class="icon2">이미지파일</td>
+                            <td>2019.08.09</td>
+                            <td>417</td>
+                        </tr>
+                        <tr>
+                            <td>28</td>
+                            <td>호텔&amp;콘도</td>
+                            <td class="icon11 tit">팰리스호텔 영업장 운영시간 변경안내</td>
+                            <td>2019-07-26</td>
+                            <td>2019-08-17</td>
+                            <td class="icon2">이미지파일</td>
+                            <td>2019.08.02</td>
+                            <td>807</td>
+                        </tr>
+                        <tr>
+                            <td>27</td>
+                            <td>호텔&amp;콘도</td>
+                            <td class="icon11 tit">카사시네마 공연관람 안내</td>
+                            <td>2019-06-21</td>
+                            <td>2021-01-31</td>
+                            <td class="icon2">이미지파일</td>
+                            <td>2019.08.01</td>
+                            <td>760</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="con_number">
+                    <ul>
+                        <li><a href="#" class="on">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footerWrap">
+        <div class="footer clear">
+            <span class="ft_logo">하이원리조트</span>
+            <h2 class="hide">sns</h2>
+            <ul class="ft_sns">
+                <li>
+                    <a href="#">유튜브</a>
+                </li>
+                <li>
+                    <a href="#">페이스북</a>
+                </li>
+                <li>
+                    <a href="#">블로그</a>
+                </li>
+                <li>
+                    <a href="#">인스타</a>
+                </li>
+                <li>
+                    <a href="#">카카오스토리</a>
+                </li>
+            </ul>
+            <h2 class="hide">회사정보</h2>
+            <div class="ft_info clear">
+                <ul class="clear">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">인재채용</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보 처리방침</a></li>
+                    <li><a href="#">영상정보기기 운영관리 방침</a></li>
+                    <li><a href="#">저작권 보호</a></li>
+                    <li><a href="#">이메일 무단수집 거부</a></li>
+                    <li><a href="#">제휴제안</a></li>
+                    <li><a href="#">전자입찰/공급업체 포털</a></li>
+                    <li>
+                        <div class="footer_select">
+                            <button>패밀리사이트</button>
+                            <ul>
+                                <li><a href="https://bxslider.com/options/" target="_blank">사이트1</a></li>
+                                <li><a href="">사이트2</a></li>
+                                <li><a href="">사이트3</a></li>
+                                <li><a href="">사이트4</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="info_list clear">
+                <ul>
+                    <li>하이원 그랜드호텔:강원도 정선군 사북읍 하이원길 265</li>
+                    <li>하이원 팰리스호텔:강원도 정선군 고한읍 고한7길 399</li>
+                    <li>대표번호:1588-7789</li>
+                    <li>문의사항:Webmaster@high1.com</li>
+                </ul>
+                <ul>
+                    <li>사업자등록번호:225-81-10770, 225-85-02429</li>
+                    <li>신고현황:통신판매업 신고</li>
+                    <li>통신판매업 신고기관명:강원도 정선군청</li>
+                </ul>
+                <span><a href="#">주요 사업장간 거리</a></span>
+            </div>
+            <div class="site_list clear">
+                <p class="copyright">COPYRIGHT&copy; 2019 BY KANGWON LAND,INC.ALL RIGHTS RESERVED.</p>
+                <ul>
+                    <li><a href="#">강원랜드</a></li>
+                    <li><a href="#">강원랜드 중독관리센터</a></li>
+                    <li><a href="#">강원랜드 복지재단</a></li>
+                    <li><a href="#">강원랜드 희망재단</a></li>
+                    <li><a href="#">정선태백영월삼척</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
