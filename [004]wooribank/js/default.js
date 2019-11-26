@@ -1,8 +1,6 @@
-$(document).ready(function() {
-  
 function search(){
   //search 버튼을 클릭했을 때
-  $('.search__open').on('click keyup', function(){
+  $('.search__open').on('click', function(){
     $(this).next('.search__form').stop().slideToggle(200);
   });
   //search__form 영역에서 벗어났을 때
@@ -11,34 +9,32 @@ function search(){
       $(this).stop().slideUp(200);
     };
   });
-  //탭키가 검색 버튼을 지나치면 search__form이 없어짐
-  $('.search__form button[type="submit"]').blur(function(){
-      $(this).parents('.search__form').stop().slideUp();
-  });
-
 };
 search();
 
 function gnb_pc(){
   //마우스가 gnb 호버 했을 때
-  $('.gnb > ul > li').on('mouseenter keyup', function(){
-    var width = $(window).width();
+  var width = $(window).width();
+  $('.gnb > ul > .gnb__list1').on('mouseenter keyup', function(){
     if(width > 1024){
-      $(this).parent().siblings('.gnb__sub').stop().fadeIn(100);
-      $(this).parent().siblings('.dim').stop().fadeIn(100);
+      $(this).parent().find('.gnb__list2').stop().fadeIn();
+      $(this).parents('.gnb').addClass('on').slideDown();
+      $(this).parents('body').children('.dim').stop().fadeIn();
     };
   });
   //마우스가 gnb__sub 밖으로 나갔을 때
-  $('.gnb__sub').on('mouseleave', function(){
-    if($(this).height() < 300) { //서브메뉴 높이가 300이하면
-      $(this).fadeOut(100);
-      $(this).siblings('.dim').fadeOut(100);
+  $('.gnb').on('mouseleave', function(){
+    if(width > 1024){
+      $(this).find('.gnb__list2').stop().fadeOut();
+      $(this).removeClass('on');
+      $(this).parents('body').children('.dim').stop().fadeOut();
     };
   });
   //탭키가 나갔을 때 서브 메뉴 창 닫힘
-  $('.gnb__sub--list2:last-child a').blur(function(){
-    $(this).parents('.gnb__sub').fadeOut(100);
-    $(this).parents('.gnb__sub').siblings('.dim').fadeOut(100);
+  $('.gnb__list1:last-child .gnb__list2 li a').blur(function(){
+    $(this).parents('.gnb__list2').fadeOut();
+    $(this).parents('.gnb').removeClass('on');
+    $(this).parents('body').children('.dim').fadeOut();
   });
 };
 gnb_pc();
@@ -135,5 +131,3 @@ function letter(){
   });
 };
 letter();
-
-});

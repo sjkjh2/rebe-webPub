@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>우리은행 시니어플러스</title>
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-  <script src="./js/default.js"></script>
+  <script src="./js/default.js" defer></script>
   <link rel="stylesheet" href="css/default.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/index.css">
@@ -151,53 +151,42 @@
     <nav class="gnb">
       <h2 class="hide">대표 메뉴</h2>
       <ul class="layout">
-        <li class="active"><a href="">금융서비스</a></li>
-        <li><a href="">관심정보</a></li>
-        <li><a href="">교육/세미나</a></li>
-        <li><a href="">여행/쇼핑</a></li>
-        <li><a href="">일자리정보</a></li>
+        <li class="gnb__list1 active"><a href="">금융서비스</a>
+          <ul class="gnb__list2">
+            <li><a href="">노후준비 및 재무상태</a></li>
+            <li><a href="">추천금융상품</a></li>
+            <li><a href="">고객이벤트</a></li>
+          </ul>
+        </li>
+        <li class="gnb__list1"><a href="">관심정보</a>
+          <ul class="gnb__list2">
+            <li><a href="">건강</a></li>
+            <li><a href="">재테크</a></li>
+            <li><a href="">생활</a></li>
+            <li><a href="">여가</a></li>
+            <li><a href="">사람</a></li>
+          </ul>
+        </li>
+        <li class="gnb__list1"><a href="">교육/세미나</a>
+          <ul class="gnb__list2">
+            <li><a href="">세미나/특강 신청</a></li>
+            <li><a href="">시니어플러스 센터예약</a></li>
+            <li><a href="">동영상 특강</a></li>
+          </ul>
+        </li>
+        <li class="gnb__list1"><a href="">여행/쇼핑</a>
+          <ul class="gnb__list2">
+            <li><a href="">시니어특화숑핑</a></li>
+            <li><a href="">여행사 제휴상품</a></li>
+            <li><a href="">여행 프로그램</a></li>
+          </ul>
+        </li>
+        <li class="gnb__list1"><a href="">일자리정보</a>
+          <ul class="gnb__list2">
+            <li><a href="">일자리정보</a></li>
+          </ul>
+        </li>
       </ul>
-      <section class="gnb__sub is_pc">
-        <h3 class="hide">하위 메뉴</h3>
-        <ul class="layout">
-          <li class="gnb__sub--list2">
-            <ul>
-              <li><a href="">노후준비 및 재무상태</a></li>
-              <li><a href="">추천금융상품</a></li>
-              <li><a href="">고객이벤트</a></li>
-            </ul>
-          </li>
-          <li class="gnb__sub--list2">
-            <ul>
-              <li><a href="">건강</a></li>
-              <li><a href="">재테크</a></li>
-              <li><a href="">생활</a></li>
-              <li><a href="">여가</a></li>
-              <li><a href="">사람</a></li>
-            </ul>
-          </li>
-          <li class="gnb__sub--list2">
-            <ul>
-              <li><a href="">세미나/특강 신청</a></li>
-              <li><a href="">시니어플러스 센터예약</a></li>
-              <li><a href="">동영상 특강</a></li>
-            </ul>
-          </li>
-          <li class="gnb__sub--list2">
-            <ul>
-              <li><a href="">시니어특화숑핑</a></li>
-              <li><a href="">여행사 제휴상품</a></li>
-              <li><a href="">여행 프로그램</a></li>
-            </ul>
-          </li>
-          <li class="gnb__sub--list2">
-            <ul>
-              <li><a href="">일자리정보</a></li>
-            </ul>
-          </li>
-        </ul>
-      </section>
-      <div class="dim"></div>
     </nav>
     <!-- //gnb -->
     <hr>
@@ -667,5 +656,6 @@
     </footer>
     <!-- //footer -->
   </div>
+  <div class="dim"></div>
 </body>
 </html>
