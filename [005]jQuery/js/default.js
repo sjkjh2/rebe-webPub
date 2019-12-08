@@ -103,7 +103,7 @@ $(document).ready(function(){  //문서가 준비가 되면 js가 실행을 함.
   function rwd(){
     $('.rwd').on('click', function(){
       var width = $(window).width();
-      // console.log(width);
+      console.log(width);
       if(width > 1024){ //브라우저 가로사이즈 크기 > 내가 정한 기준의 가로사이즈
         $('body').css('background', 'pink');
       }else{ //조건식

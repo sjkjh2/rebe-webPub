@@ -1,13 +1,17 @@
 function search(){
   //search 버튼을 클릭했을 때
-  $('.search__open').on('click', function(){
-    $(this).next('.search__form').stop().slideToggle(200);
-  });
-  //search__form 영역에서 벗어났을 때
-  $('.search__form').on('mouseleave', function(){
-    if($(this).height() < 222) {
-      $(this).stop().slideUp(200);
-    };
+  // $('.search__open').on('click', function(){
+  //   $(this).next('.search__form').stop().slideToggle(200);
+  // });
+  // //search__form 영역에서 벗어났을 때
+  // $('.search__form').on('mouseleave', function(){
+  //   if($(this).height() < 222) {
+  //     $(this).stop().slideUp(200);
+  //   };
+  // });
+  //키워드 slider
+  $('.search__slider').bxSlider({
+    wrapperClass:'keyword'
   });
 };
 search();
@@ -17,15 +21,15 @@ function gnb_pc(){
   var width = $(window).width();
   $('.gnb > ul > .gnb__list1').on('mouseenter keyup', function(){
     if(width > 1024){
-      $(this).parent().find('.gnb__list2').stop().fadeIn();
+      $(this).parent().find('.gnb__list2').stop().fadeIn(100);
       $(this).parents('.gnb').addClass('on').slideDown();
       $(this).parents('body').children('.dim').stop().fadeIn();
     };
   });
-  //마우스가 gnb__sub 밖으로 나갔을 때
+  //마우스가 gnb밖으로 나갔을 때
   $('.gnb').on('mouseleave', function(){
     if(width > 1024){
-      $(this).find('.gnb__list2').stop().fadeOut();
+      $(this).find('.gnb__list2').stop().fadeOut(100);
       $(this).removeClass('on');
       $(this).parents('body').children('.dim').stop().fadeOut();
     };
