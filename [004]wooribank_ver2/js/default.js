@@ -41,6 +41,8 @@ var partners__slider =  $('.partners ul').bxSlider({
   minSlides:6,
   touchEnabled:false
 });
+$(window).on('load', function(){
+});
 $(window).on('resize', function(){
   var wid = $(window).width();
   if(wid < 1024){
@@ -56,18 +58,18 @@ $(window).on('resize', function(){
       minSlides:3,
       touchEnabled:true
     });
-  // }else if(wid < 768){
-  //   partners__slider.reloadSlider({
-  //     auto:false,
-  //     autoControls:false,
-  //     pager:true,
-  //     controls:false,
-  //     slideWidth:500,
-  //     slideMargin:10,
-  //     maxSlides:2,
-  //     minSlides:2,
-  //     touchEnabled:true
-  //   });
+  }else if(wid < 768){
+    partners__slider.reloadSlider({
+      auto:false,
+      autoControls:false,
+      pager:true,
+      controls:false,
+      slideWidth:500,
+      slideMargin:10,
+      maxSlides:2,
+      minSlides:2,
+      touchEnabled:true
+    });
   }else{
     partners__slider.reloadSlider({
       wrapperClass:'partners__slider',
