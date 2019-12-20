@@ -45,48 +45,58 @@ $(document).ready(function(){  //문서가 준비가 되면 js가 실행을 함.
   });
 
   var slider5 = $('.slider5').bxSlider({
+    wrapperClass:'resizeSlider5',
+    auto:false,
+    autoControls:false,
+    pager:false,
+    controls:false,
     slideWidth:400,
     minSlides:3,
     maxSlides:3
   });
   
-  $(window).on('resize', function(){
-    var wid = $(window).width();
-    if( wid > 1024 ){
-      slider5.reloadSlider({
-        slideWidth:400,
-        minSlides:5,
-        maxSlides:5
-      });
-    }else if( wid < 1024 ){
-      slider5.reloadSlider({
-        slideWidth:400,
-        minSlides:2,
-        maxSlides:2
-      });
-    };
-  });
-
-    
   // $(window).on('resize', function(){
   //   var wid = $(window).width();
   //   if( wid > 1024 ){
-  //     win1(5, 400);
+  //     slider5.reloadSlider({
+  //       slideWidth:400,
+  //       minSlides:5,
+  //       maxSlides:5
+  //     });
   //   }else if( wid < 1024 ){
-  //     win1(2, 600);
-  //   }
+  //     slider5.reloadSlider({
+  //       slideWidth:400,
+  //       minSlides:2,
+  //       maxSlides:2
+  //     });
+  //   };
   // });
 
-  // if( window.matchMedia("(min-width:400px) and (max-width:800px)").matches){
-  //   win1(3, 500);
-  // }
+    
+  $(window).on('resize', function(){
+    var wid = $(window).width();
+    if( wid > 1024 ){
+      win1(5, 400);
+    }else if( wid < 1024 ){
+      win1(2, 600);
+    }
+  });
 
-  // function win1($min, $wids){
-  //   slider5.reloadSlider({
-  //     minSlides:$min,
-  //     maxSlides:$min,
-  //     slideWidth:$wids
-  //   });
-  // };
+  if( window.matchMedia("(min-width:400px) and (max-width:800px)").matches){
+    win1(3, 500);
+  }
+
+  function win1($min, $wids){
+    slider5.reloadSlider({
+      wrapperClass:'resizeSlider5',
+      auto:false,
+      autoControls:false,
+      pager:false,
+      controls:false,
+      minSlides:$min,
+      maxSlides:$min,
+      slideWidth:$wids
+    });
+  };
 
 });
