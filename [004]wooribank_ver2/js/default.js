@@ -207,7 +207,7 @@ function partners(){
 partners();
 
 function popup__agree(){ //약관보기 팝업
-  var popup = $('.popup__agree'); 
+  var popup = $('.popup__agree');
   $('.costomer__clause button').on('click', function(){
     popup.fadeIn();
     popup.next('.dim').fadeIn();
@@ -251,17 +251,11 @@ function letter(){
     $(this).siblings('.footer__letter--popup').removeClass('on--open');
     $(this).parents('.footer__letter').children('.footer__letter--open').fadeIn(100);
   });
-  // $('.letter__form select option[vale=""]').on('click', function(){
-  //   var txt = $(this).text();
-  //   console.log(txt);
-  //   var btn = $(this).parents('.letter__form').find('input');
-  //   btn.text(txt);
-  // });
-  // $('.letter__form p > button').on('click', function(){
-  //   var popup = $(this).parents('footer').prevAll('main').find('.costomer__popup');
-  //   $(popup).fadeIn();
-  //   $(popup).next('.dim').fadeIn();
-  // });
+  $('.letter__form p > button').on('click', function(){
+    var popup = $('.popup__agree');
+    popup.fadeIn();
+    popup.next('.dim').fadeIn();
+  });
 };
 letter();
 

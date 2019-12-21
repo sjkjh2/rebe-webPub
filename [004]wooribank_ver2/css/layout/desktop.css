@@ -165,20 +165,20 @@
 .footer__bottom .sns_news { float:right; }
 .footer__letter--open,
 .footer__letter--close { position:fixed; right:60px; bottom:60px; width:66px; height:66px; border-radius:50%; background:#ffab33; font-size:15px; font-weight:700; color:#fff; letter-spacing:-1px; }
-.footer__letter--popup { overflow:hidden; display:none; position:fixed; right:60px; bottom:150px; width:532px; box-sizing:border-box; box-shadow:0px 10px 36px rgba(0, 0, 0, .36); border-radius:10px; background:#e9e8e4 url("../../images/bg_popup.jpg") no-repeat center top; transform:translateY(30px); transition:all .5s; }
-.footer__letter--popup.on--open { transform:translateY(0); }
+.footer__letter--popup { overflow:hidden; display:none; position:fixed; right:60px; bottom:150px; width:532px; box-sizing:border-box; box-shadow:0px 10px 36px rgba(0, 0, 0, .36); border-radius:10px; background:#e9e8e4 url("../../images/bg_popup.jpg") no-repeat center top; text-align:left; opacity:0; transform:translateY(30px); transition:all .5s; }
+.footer__letter--popup.on--open { opacity:1; transform:translateY(0); }
 .footer__letter--popup.on--close { transform:translateY(30px); }
 .footer__letter--popup > div { padding:40px 30px 0; }
 .footer__letter--popup > div h5 { font-size:26px; color:#333; }
 .footer__letter--popup > div h5 span { color:#3f69b8; }
 .footer__letter--popup > div h5 + p { font-size:16px; margin:15px 0 0; }
-.letter__form div { display:flex; padding:60px 15px 15px; }
+.letter__form div { padding:60px 15px 15px; }
 .letter__form div > input,
 .letter__form div > span,
-.letter__form div > select { height:40px; box-sizing:border-box; font-size:16px; line-height:40px; }
-.letter__form div > input { padding:0 20px; }
-.letter__form div > span { flex:0 0 32px; text-align:center; }
-.letter__form div > select { padding:0 0 0 20px; margin:0 0 0 5px; }
+.letter__form div > select { height:40px; font-size:16px; line-height:40px; }
+.letter__form div > input { float:left; padding:0 20px; width:152px; }
+.letter__form div > span { float:left; width:32px; text-align:center; }
+.letter__form div > select { float:right; padding:0 0 0 20px; margin:0 0 0 5px; width:160px; }
 .letter__form p { font-size:16px; color:#333; }
 .letter__form p > label { position:relative; padding:0 0 0 50px; margin:0 20px 0 0; cursor:pointer; }
 .letter__form p > label:before { content:""; position:absolute; left:16px; top:-3px; width:29px; height:25px; background:url("../../images/chk.png") no-repeat center / 100% auto; }
@@ -189,7 +189,6 @@
 .letter__form button[type="submit"]:hover,
 .letter__form button[type="submit"]:focus { background:#288bcc; }
 .footer__letter--close { display:none; background:#ffab33 url("../../images/btn_close.png") no-repeat center / 17px auto; }
-
 .footer__copy { float:left; font-size:16px; line-height:22px; color:#a0a0a0; }
 /* footer */
 /* 개인정보 수집 및 마케팅 활용에 관한 안내 popup */
