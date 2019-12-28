@@ -114,8 +114,8 @@
 .paginate a.ico.prev { margin:0 10px 0 0; background-image:url("../../images/btn_page_prev.png"); }
 .paginate a.ico.next { margin:0 3px 0 7px; background-image:url("../../images/btn_page_next.png"); }
 .paginate a.ico.last { background-image:url("../../images/btn_page_last.png"); }
-.paginate a.on { background:#55b9fe; color:#fff; }
-.paginate a:not(.on):hover { background-color:#fafafa; }
+.paginate a.is_active { background:#55b9fe; color:#fff; }
+.paginate a:not(.is_active):hover { background-color:#fafafa; }
 .costomer { padding:40px 40px 50px; margin:40px 0 0; width:100%; border:1px solid #aec6f1; box-sizing:border-box; color:#333; }
 .costomer h4 { float:left; margin-right:10px; font-size:26px; }
 .costomer h4 span:first-child { color:#3f69b8; }
